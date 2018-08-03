@@ -20,6 +20,10 @@ public class Principal {
                 "Manual de organización",
                 null);
         
+        servicioCategorias.agregarCategoria(
+                "Manual de funciones",
+                null);
+        
         servicioCategorias.imprimirCategorias();
 
     }
