@@ -1,6 +1,7 @@
 package com.telusinternational.programacion.avanzada.unidad4.acuerdos;
 
 import com.telusinternational.programacion.avanzada.unidad4.acuerdos.servicios.ServicioCategorias;
+import com.telusinternational.programacion.avanzada.unidad4.acuerdos.servicios.SignatarioService;
 
 /**
  *
@@ -25,6 +26,15 @@ public class Principal {
                 null);
         
         servicioCategorias.imprimirCategorias();
+        
+        SignatarioService signatarioService = new SignatarioService();
+        
+        Signatario signatario = new Signatario();
+        signatario.setNombres("Juan");
+        signatario.setApellidos("Perez");
+        signatario.setPuesto("Jefe");
+        
+        signatarioService.guardar(signatario);
 
     }
 }
