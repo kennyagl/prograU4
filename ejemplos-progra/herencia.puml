@@ -1,0 +1,28 @@
+@startuml
+
+class Hablador{
+   + void hablar();
+}
+class Alumno{
+    - identificador;
+}
+class Cacatuoidea
+class HomoSapiens
+
+class Profesor
+class Psittaciforme
+class Psittacoidea
+class Strigopoidea
+
+Hablador <|-- HomoSapiens : extends
+Hablador <|--  Psittaciforme : extends
+
+HomoSapiens <|-- Alumno : extends
+HomoSapiens <|-- Profesor : extends
+
+Psittaciforme <|-- Cacatuoidea  : extends
+Psittaciforme <|-- Psittacoidea  : extends
+Psittaciforme <|-- Strigopoidea  : extends
+
+
+@enduml
