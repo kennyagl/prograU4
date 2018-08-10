@@ -21,7 +21,7 @@ import java.util.Date;
  *
  * @author Kenny
  */
-public class HomoSapiens extends Hablador {
+public class HomoSapiens extends AbstractHablador {
 
     private String nombre;
     private Date fechaNacimiento;
@@ -29,12 +29,51 @@ public class HomoSapiens extends Hablador {
     /**
      * se especializa el metodo hablar al sobreescribirlo
      */
-    @Override
-    public void hablar() {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        System.out.println("Hola..");
-        System.out.println("Mi nombre es " + nombre);
-        System.out.println("Mi fecha de nacimiento es " + fechaNacimiento);
+//    @Override
+//    public void hablar() {
+//        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+//        System.out.println("Hola..");
+//        System.out.println("Mi nombre es " + nombre);
+//        System.out.println("Mi fecha de nacimiento es " + sdf.format(fechaNacimiento));
+//    }
+//    
+    public void caminar(){
+        
     }
+
+    @Override
+    void decirMiNombre() {
+        System.out.println("Mi nombre es " + nombre);
+    }
+
+    @Override
+    void decirProfesion() {
+        
+    }
+
+    @Override
+    void decirFechaNacimiento() {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        System.out.println("Mi fecha de nacimiento es " + sdf.format(fechaNacimiento));
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Date getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(Date fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+    
+    
+    
 
 }

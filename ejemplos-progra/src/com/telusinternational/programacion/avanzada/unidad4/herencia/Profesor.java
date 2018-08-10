@@ -4,7 +4,7 @@ package com.telusinternational.programacion.avanzada.unidad4.herencia;
  *
  * @author Kenny
  */
-public class Profesor extends HomoSapiens {
+public class Profesor extends HomoSapiens implements CantanteInterface{
 
     private String especialidad;
 
@@ -16,6 +16,15 @@ public class Profesor extends HomoSapiens {
     public void hablar() {
         super.hablar();
         System.out.println("Soy profesor de " + especialidad);
+    }
+    
+    public void hacerPresentacion(){
+        
+    }
+
+    @Override
+    public void cantar() {
+        System.out.println("lalalala..."+ instrumento);
     }
 
 }
