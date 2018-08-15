@@ -1,0 +1,30 @@
+@startuml
+interface Cola{
+    void vaciar();
+    Object siguiente();
+}
+interface EstructuraDinamica{
+    void agregar(Object object);
+    int longitud();
+    boolean vacia();
+}
+interface Lista{
+    void eliminar(int posicion);
+    int posicion(Object object);    
+    void recorrer();
+}
+interface ListaCircular
+interface ListaDoblementeEnlazada{
+    void recorrerOrdenInverso();
+}
+interface Pila{
+    Object obtener();
+}
+
+EstructuraDinamica <|-- Lista
+EstructuraDinamica <|-- Cola
+EstructuraDinamica <|-- Pila
+Lista <|-- ListaCircular
+Lista <|-- ListaDoblementeEnlazada
+
+@enduml
