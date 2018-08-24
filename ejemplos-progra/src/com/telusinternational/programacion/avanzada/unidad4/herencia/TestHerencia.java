@@ -14,6 +14,29 @@ public class TestHerencia {
         hablador.setFechaNacimiento(new Date());
         hablador.setNombre("juan");
         hablador.hablar();
+        
+        
+        
+        Profesor profe = new Profesor();
+        profe.especialidad = "IT";
+        profe.setNombre("Juan");
+       
+        HomoSapiens homo = profe;
+        
+        
+        System.out.println(homo.getNombre());
+        System.out.println(profe.especialidad);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
     
 }

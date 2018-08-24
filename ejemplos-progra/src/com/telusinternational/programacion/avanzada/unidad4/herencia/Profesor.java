@@ -6,7 +6,7 @@ package com.telusinternational.programacion.avanzada.unidad4.herencia;
  */
 public class Profesor extends HomoSapiens implements CantanteInterface{
 
-    private String especialidad;
+    public String especialidad;
 
     /**
      * especializa sobreescribiendo el método
