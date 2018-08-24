@@ -1,17 +1,29 @@
 @startuml
 
 class Hablador{
+   # especie;
    + void hablar();
 }
 class Alumno{
-    - identificador;
+    - carnet;
 }
 
 class Cacatuoidea
-class HomoSapiens
 
-class Profesor
-class Psittaciforme
+class HomoSapiens{
+    # identificador;
+    # fechaNacimiento;
+    # nombre;
+}
+
+class Profesor{
+    - codigoProfesor;
+}
+
+class Psittaciforme{
+    + volar();
+}
+
 class Psittacoidea
 class Strigopoidea
 
