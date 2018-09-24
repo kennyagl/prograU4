@@ -1,8 +1,7 @@
-package com.telusinternational.programacion.avanzada.unidad6.sort.selection;
+package unidad4.ordenamiento;
 
 import java.util.ArrayList;
 import java.util.List;
-import unidad4.ordenamiento.Documento;
 
 /**
  *
